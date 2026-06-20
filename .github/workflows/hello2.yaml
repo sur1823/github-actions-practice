@@ -1,0 +1,18 @@
+name: helloworld
+
+on: workflow_dispatch
+
+jobs:
+  print_message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print to world
+        run: echo "Hello World"
+
+  show_date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show_time
+        run: date
+        
+      
